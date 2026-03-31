@@ -1,0 +1,52 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* App Layout */
+.app {
+  display: flex;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  width: calc(100%-250px); /* FIXED spacing */
+  transition: 0.3s;
+}
+
+/* Section spacing */
+section {
+  min-height: 100vh;
+  padding: 50px 20px;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .main-content {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0; /* VERY IMPORTANT */
+    width: 100%;
+    padding: 15px;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  section {
+    padding: 30px 10px;
+  }
+}

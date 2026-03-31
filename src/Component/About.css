@@ -1,0 +1,164 @@
+.about {
+  padding: 60px 20px;
+  background: #0f172a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  min-height: 100vh; /* better than height:100% */
+}
+
+.acknowledgement {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #a67c52;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Title */
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.about-desc {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  color: #cbd5f5;
+  padding: 0 10px;
+}
+
+/* Main Container */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+/* Image */
+.about-img img {
+  width: 280px;
+  max-width: 100%; /* important for mobile */
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* Content */
+.about-content {
+  max-width: 500px;
+  width: 100%;
+}
+
+.about-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+.about-text {
+  margin-bottom: 20px;
+  color: #cbd5f5;
+  line-height: 1.6;
+}
+
+/* Info Section */
+.about-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.about-info p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.about-info span {
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+/* Bottom Text */
+.about-bottom {
+  color: #94a3b8;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .about-container {
+    gap: 30px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .about-content h3 {
+    font-size: 22px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about {
+    padding: 40px 15px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 220px;
+  }
+
+  .about-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  .about-content h3 {
+    font-size: 20px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .about {
+    padding: 30px 10px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .about-desc {
+    font-size: 14px;
+  }
+
+  .about-text {
+    font-size: 14px;
+  }
+
+  .about-info p {
+    font-size: 13px;
+  }
+
+  .about-img img {
+    width: 180px;
+  }
+}

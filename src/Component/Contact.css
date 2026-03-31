@@ -1,0 +1,139 @@
+.message {
+  width: 100%;
+  min-height: 100vh;
+  background: #0f172a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  color: white;
+}
+
+/* Heading */
+.message h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Form Box */
+.message form {
+  width: 100%;
+  max-width: 500px;
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Input Fields */
+.message input,
+.message textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background: #0f172a;
+  color: white;
+  font-size: 16px;
+}
+
+/* Placeholder */
+.message input::placeholder,
+.message textarea::placeholder {
+  color: #94a3b8;
+}
+
+/* Textarea */
+.message textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+/* Button */
+.message button {
+  padding: 12px;
+  background: #00bcd4;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover */
+.message button:hover {
+  background: #0097a7;
+  transform: scale(1.03);
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .message h2 {
+    font-size: 2.2rem;
+  }
+
+  .message form {
+    padding: 25px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .message {
+    padding: 30px 15px;
+  }
+
+  .message h2 {
+    font-size: 2rem;
+  }
+
+  .message form {
+    padding: 20px;
+  }
+
+  .message input,
+  .message textarea {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .message button {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .message {
+    padding: 25px 10px;
+    gap: 15px;
+  }
+
+  .message h2 {
+    font-size: 1.7rem;
+  }
+
+  .message form {
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .message textarea {
+    min-height: 100px;
+  }
+
+  .message button:hover {
+    transform: none; /* avoid zoom issues on small screens */
+  }
+}
